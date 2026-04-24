@@ -1,0 +1,351 @@
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+/* appear - on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 2000ms linear;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+div #home {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("background-img\ blur.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  position: relative;
+}
+
+div #app {
+  scroll-snap-align: center;
+  background-color: #fffef7;
+  height: 100vh;
+  padding-top: 2vh;
+  margin: auto;
+}
+
+#definition {
+  margin: -150px 50px 100px 50px;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  font-size: 90%;
+}
+
+#poem {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+div {
+  text-align: center;
+}
+
+input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+button,
+label,
+ul {
+  width: 200px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 24px;
+  margin: auto;
+  padding: 10px;
+}
+#font-picker > button {
+  left: 0px;
+}
+
+#font-picker {
+  box-shadow: none;
+  padding-top: 10px;
+  width: 80%;
+}
+
+img {
+  width: 300px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+li:not(:last-child) {
+  padding: 10px;
+  border-bottom: solid 1px;
+}
+
+#title {
+  padding-top: 10vh;
+  padding-bottom: 19vh;
+  font-style: italic;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 1100%;
+  color: rgba(238, 232, 230, 0.9);
+}
+
+#description {
+  /* padding-bottom: 30px; */
+  color: aliceblue;
+  font-family: "Reenie Beanie", cursive;
+  font-weight: lighter;
+  /* font-size: 150%; */
+  font-size: 200%
+}
+
+#action-btn {
+  margin-bottom: 2.5px;
+  border-radius: 50px;
+}
+
+#reidentify-btn {
+  margin: 2.5px;
+  border-radius: 50px;
+}
+
+#save-me-btn {
+  margin: 2.5px;
+  border-radius: 50px;
+  position: absolute;
+  margin-left: 110px;
+  bottom: -42.8px;
+  height: 38px;
+  width: 38px;
+  padding: 5px 10px 5px 10px;
+}
+
+
+#copy-clipboard-btn {
+  margin: 2.5px;
+  position: absolute;
+  bottom: 0.2px;
+  margin-left: 110px;
+  border-radius: 50px;
+  height: 38px;
+  width: 38px;
+  padding: 5px 10px 5px 10px
+}
+
+#install-btn {
+  margin: 2.5px;
+  border-radius: 50px;
+}
+
+#edit-btn {
+  margin: 2.5px;
+  top: 0px;
+  border-radius: 50px;
+  position: absolute;
+  left: -20px;
+  width: 100%;
+}
+
+.btn-info {
+  background-color: linear-gradient(rgba(255, 0, 0, 0.699), rgba(132, 43, 235, 0.801));
+}
+
+#get-started-btn {
+  /* margin-top: 1%; */
+  padding: 5px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  left: 0;
+}
+
+#sticky {
+  position: absolute;
+  bottom: -99vh;
+  right: 0;
+  left: 0;
+}
+
+#share-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#buttonCenter {
+  display: flex;
+  justify-content: center;
+}
+
+#text-color {
+  text-align: left;
+}
+
+div[id^=font-picker] {
+  position: sticky;
+}
+
+#font {
+  border-radius: 10px;
+  text-align: left;
+}
+
+#multiCollapseExample2 > div > div > div.hue-picker {
+  width: 95% !important;
+}
+
+#multiCollapseExample2 > div > div > div.hue-picker > div > div {
+  border-radius: 20px !important;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+#loader{
+  padding-top: 10vh;
+  padding-bottom: 3vh;
+  width: 75vw;
+  position: relative;
+}
+
+#circleStick {
+  position: absolute;
+  bottom: -35vh;
+  right: 0;
+  left: 0;
+}
+
+img.circleLoader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+#text-color > div > div > div {
+  border-radius: 30px;
+  width: 85%;
+}
+#fonts {
+  margin-top: 10px;
+}
+
+.spacer {
+  padding: 15px
+}
+
+.spacer2 {
+  height: 5px
+}
+.spacer3 {
+  padding: 10px
+}
+
+#spacer {
+  padding: 10vh;
+}
+
+.col-sm-4 {
+  padding-top: 15px;
+}
+
+#image {
+  max-width: 60%;
+  border-radius: 10px;
+  margin-bottom: 20px ;
+  margin-top: 20px ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(35, 35, 36, 0.089);
+}
+
+#wordLoader {
+  max-width: 110px;
+}
+
+#img-and-button {
+  position: relative;
+  margin-right: auto;
+}
+
+#special {
+  position: relative;
+}
+
+#special2 {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 80%;
+}
+
+span {
+  color: #fffef7c5;
+
+}
+
+#bold {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  color: #fffef7f1;
+  font-size: 15.5px;
+  text-shadow: 0.1px 0.1px 2px rgba(238, 242, 255, 0.5)
+}
+
+/* smaller than 500 */
+@media only screen and (max-width: 500px) {
+  #title {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 600%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .hidden {
+    display: none
+  }
+  #get-started-btn {
+
+    bottom: 10vh;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .hidden {
+    display: none
+  }  
+}
