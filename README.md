@@ -3,12 +3,19 @@
 <hr>
 A PWA that uses a pretrained TensorFlow Model (MobileNet) for image classification and a word-finding query engine to create a haiku based on a user provided photo.
 
-# Getting Started
+Original repo here: https://github.com/TheDonnas/Haicoo/
+The purpose of this repo is for hosting on gh pages.
+
+Project is hosted here: https://cruzn978.github.io/haicoo-demo/
+
+# Getting Started Locally
 ```
-git clone https://github.com/TheDonnas/Haicoo.git
+git clone https://github.com/cruzn978/haicoo-demo.git
 npm install
 npm start
 ```
+
+Make sure to use node 12.11.1 before installing.
 
 ## Instructions
 Click upload image<br />

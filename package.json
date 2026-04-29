@@ -1,6 +1,7 @@
 {
   "name": "haicoo",
   "version": "0.1.0",
+  "homepage": "https://cruzn978.github.io/haicoo-demo/",
   "private": true,
   "engines": {
     "node": "12.11.1",
@@ -36,7 +37,9 @@
     "eject": "react-scripts eject",
     "build-sw": "node ./src/sw-build.js",
     "build": "react-scripts build && npm run build-sw",
-    "postinstall": "react-scripts build"
+    "postinstall": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "workbox-build": "^5.1.3"
   }
 }
